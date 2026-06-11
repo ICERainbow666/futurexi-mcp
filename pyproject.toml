@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "futurexi-mcp"
+version = "1.0.0"
+description = "FutureXI MCP Server — AI 直接管理你的 FutureXI 账号"
+requires-python = ">=3.10"
+dependencies = ["mcp>=1.0"]
+
+[project.scripts]
+futurexi-mcp = "testpy.mcp_server:mcp.run"
